@@ -14,23 +14,37 @@ Last Modified: 9/21/24
     <link rel="icon" href="favicon.ico">
 
     <style>
-        .links th,.links td { 
-                width: 250px;
-                text-align: center;
+        #container {
+            display: flex;
         }
-        img{
+        aside {
+            flex: 0 1 30%;
+        }
+        main {
+            flex: 0 1 70%;
+        }
+
+        .links th,.links td { 
+            width: 250px;
+            text-align: center;
+        }
+        .logo img {
+            width: 100px;
+        }
+
+        .profile img{
             width: 300px;
         }
         .intro th,.intro td { 
-                vertical-align: top;
-                width: 50%;
+            vertical-align: top;
+            width: 50%;
         }
 
         .career th, .career td { 
-                border: 2px solid;
+            border: 2px solid;
         }
         .body th,.body td { 
-                border: 2px solid;
+            border: 2px solid;
         }
 
         .readings img{
@@ -40,26 +54,14 @@ Last Modified: 9/21/24
             text-indent: 30px;
             text-align: center;
         }
-
-
-        #container {
-            display: flex;
-        }
-
-        aside {
-            flex: 0 1 30%;
-        }
-
-        main {
-            flex: 0 1 70%;
-        }
     </style>
 </head>
+
 <body>
     <nav>
         <table class="links">
             <tr>
-                <th><img src="favicon.ico" alt="Logo"></th>
+                <th><img id="logo" src="favicon.ico" alt="Logo"></th>
                 <th><a href="index.html">Introduction</a></th>
                 <th><a href="career.html">Career Summary</a></th>
                 <th><a href="edQ.html">Education and Qualifications</a></th>
@@ -71,7 +73,7 @@ Last Modified: 9/21/24
         <aside>
             <section id="Intro">
                 <h2>Introduction</h2>
-                <img src="temporary-profile.JPG" alt="Profile Img">
+                <img id="profile" src="temporary-profile.JPG" alt="Profile Img">
                 <h3>Rebekah Blazer</h3>
                 <p>Email: <a href="mailto:rebekahablazer@gmail.com">rebekahablazer@gmail.com</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/rebekah-blazer-132472263">https://www.linkedin.com/in/rebekah-blazer-132472263</a></p></td>
@@ -148,11 +150,9 @@ Last Modified: 9/21/24
                     </tr>
                 </table>
             </section>
-        
-        
-        
-            <h2>Education and Qualifications</h2>
+            
             <section id="Education">
+                <h2>Education and Qualifications</h2>
                 <table class="body">
                     <caption><h3>Education</h3></caption>
                     <tr>
@@ -312,7 +312,7 @@ Last Modified: 9/21/24
             </section>
             
         
-            <section>
+            <section id="Interests_and_Hobbies">
                 <h2>Interests and Hobbies</h2>
                 <ol>
                     <li><h3>Drawing & Painting</h3></li>
@@ -353,8 +353,5 @@ Last Modified: 9/21/24
             </section>
         </main>
     </div>
-
-
-    
 </body>
 </html>
