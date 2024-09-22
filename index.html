@@ -2,7 +2,7 @@
 Name: Rebekah Blazer
 Class: CPSC332
 Assignment: Homework 3
-Last Modified: 9/21/24
+Last Modified: 9/22/24
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,24 +14,18 @@ Last Modified: 9/21/24
     <link rel="icon" href="favicon.ico">
 
     <style>
-        #container {
-            display: flex;
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
         }
-        aside {
-            flex: 0 1 30%;
-        }
-        main {
-            flex: 0 1 70%;
-        }
-
         #navBar{
             position: sticky;
             z-index: 10;
-            background-color: white;
+            background-color: #c8bfe7;
             top: 0px;
             padding-bottom: 10px;
+            width: auto;
         }
-
         .links th,.links td { 
             text-align: center;
             font-size: 15px;
@@ -39,11 +33,39 @@ Last Modified: 9/21/24
         }
         .links img {
             width: 100px;
-            border-radius: 50%;
+            border-radius: 25%;
         }
 
-        .intro img{
-            width: 300px;
+        #container {
+            display: flex;
+        }
+        aside {
+            flex: 0 1 30%;
+            background-color: #c8bfe776;
+        }
+        main {
+            flex: 0 1 70%;
+            background-color: #c0cbe82f;
+        }
+        #body h2{
+            background-color: #c8bfe7;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #body tr:nth-child(odd) {
+            background-color: #c8bfe776 ;
+        }
+
+        #Intro img{
+            padding-top: 30px;
+            padding-left: 35px;
+            width: 500px;
+        }
+        #aside h2{
+            padding-left: 10px;
+        }
+        #aside p{
+            padding-left: 10px;
         }
 
         .career th, .career td { 
@@ -60,6 +82,8 @@ Last Modified: 9/21/24
             text-indent: 30px;
             text-align: center;
         }
+
+        
     </style>
 </head>
 
@@ -78,11 +102,10 @@ Last Modified: 9/21/24
         </nav>
     </div>
     <div id="container">
-        <aside>
+        <aside id="aside">
             <section id="Intro" class="intro">
-                <h2>Introduction</h2>
                 <img src="temporary-profile.JPG" alt="Profile Img">
-                <h3>Rebekah Blazer</h3>
+                <h2>Rebekah Blazer</h2>
                 <p>Email: <a href="mailto:rebekahablazer@gmail.com">rebekahablazer@gmail.com</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/rebekah-blazer-132472263">https://www.linkedin.com/in/rebekah-blazer-132472263</a></p></td>
                 
@@ -111,7 +134,7 @@ Last Modified: 9/21/24
             </section>
         </aside>
 
-        <main>
+        <main id="body">
             <section id="Careers">
                 <h2>Career Summary</h2>
                 <table class="career">
