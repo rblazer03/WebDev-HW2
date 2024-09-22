@@ -1,8 +1,8 @@
 <!--
 Name: Rebekah Blazer
 Class: CPSC332
-Assignment: Homework 2
-Last Modified: 9/20/24
+Assignment: Homework 3
+Last Modified: 9/21/24
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -25,52 +25,336 @@ Last Modified: 9/20/24
                 vertical-align: top;
                 width: 50%;
         }
+
+        .career th, .career td { 
+                border: 2px solid;
+        }
+        .body th,.body td { 
+                border: 2px solid;
+        }
+
+        .readings img{
+            width: 100px
+        }
+        .books th,.books td{
+            text-indent: 30px;
+            text-align: center;
+        }
+
+
+        #container {
+            display: flex;
+        }
+
+        aside {
+            flex: 0 1 30%;
+        }
+
+        main {
+            flex: 0 1 70%;
+        }
     </style>
 </head>
 <body>
-    <table class="links">
-        <tr>
-            <th><a href="index.html">Introduction</a></th>
-            <th><a href="career.html">Career Summary</a></th>
-            <th><a href="edQ.html">Education and Qualifications</a></th>
-            <th><a href="intHo.html">Interests and Hobbies</a></th>
-        </tr>
-    </table>
-
-    <section id="Intro">
-        <h2>Introduction</h2>
-        <table class="intro">
+    <nav>
+        <table class="links">
             <tr>
-                <td><h3>Rebekah Blazer</h3>
-                <p>Email: <a href="mailto:rebekahablazer@gmail.com">rebekahablazer@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/rebekah-blazer-132472263">https://www.linkedin.com/in/rebekah-blazer-132472263</a></p></td>
-                <td><img src="temporary-profile.JPG" alt="Profile Img"></td>
+                <th><img src="favicon.ico" alt="Logo"></th>
+                <th><a href="index.html">Introduction</a></th>
+                <th><a href="career.html">Career Summary</a></th>
+                <th><a href="edQ.html">Education and Qualifications</a></th>
+                <th><a href="intHo.html">Interests and Hobbies</a></th>
             </tr>
         </table>
-        <p>I am an ambitious and curious individual with an analytical and creative mind. I enjoy the methodical nature
-            of coding and the ingenuity that is needed to solve problems and create solutions. Computer science is a rapidly growing and wide 
-            reaching industry that is constantly changing an innovating. This diversity is what drew me to computer science, there is 
-            always a new thing to learn and understand. </p>
-    </section>
+    </nav>
+    <div id="container">
+        <aside>
+            <section id="Intro">
+                <h2>Introduction</h2>
+                <img src="temporary-profile.JPG" alt="Profile Img">
+                <h3>Rebekah Blazer</h3>
+                <p>Email: <a href="mailto:rebekahablazer@gmail.com">rebekahablazer@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/rebekah-blazer-132472263">https://www.linkedin.com/in/rebekah-blazer-132472263</a></p></td>
+                
+                <p>I am an ambitious and curious individual with an analytical and creative mind. I enjoy the methodical nature
+                    of coding and the ingenuity that is needed to solve problems and create solutions. Computer science is a rapidly growing and wide 
+                    reaching industry that is constantly changing an innovating. This diversity is what drew me to computer science, there is 
+                    always a new thing to learn and understand. </p>
+            </section>
 
-    <section id="Skill">
-        <h2>Skills</h2>
-        <ul>
-            <li><a href="https://rblazer03.github.io/WebDev-HW2/edQ.html#CS_Qualifications">Coding Languages</a>
+            <section id="Skill">
+                <h2>Skills</h2>
                 <ul>
-                    <li>C/C++</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>Assembly</li>
-                    <li>Kotlin</li>
+                    <li><a href="https://rblazer03.github.io/WebDev-HW2/edQ.html#CS_Qualifications">Coding Languages</a>
+                        <ul>
+                            <li>C/C++</li>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>Assembly</li>
+                            <li>Kotlin</li>
+                        </ul>
+                    </li>
+                    <li>User Interface Design</li>
+                    <li>Collaboration</li>
+                    <li>Organization</li>
                 </ul>
-            </li>
-            <li>User Interface Design</li>
-            <li>Collaboration</li>
-            <li>Organization</li>
-        </ul>
-    </section>
-    
+            </section>
+        </aside>
 
+        <main>
+            <section id="Careers">
+                <h2>Career Summary</h2>
+                <table class="career">
+                    <tr>
+                        <th>Role</th>
+                        <th>Company</th>
+                        <th>Years in Role</th>
+                        <th>Description</th>
+                        <th>Skills Utilized</th>
+                    </tr>
+                    <tr>
+                        <td>Research Assistant</td>
+                        <td>Gonzaga University</td>
+                        <td>October 2022 - Present</td>
+                        <td>
+                            <p>Worked closely with a professor to discuss and develop code.</p>
+                            <p>Studied outside given hours to develop knowledge that can be practically applied to the given
+                                research
+                                topic</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Java</li>
+                                <li>HTML</li>
+                                <li>Collaboration</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Waitress</td>
+                        <td>Coho Cafe</td>
+                        <td>May 2023 - August 2024</td>
+                        <td>
+                            <p>Promptly greeted guests and accurately took food and drink orders with minimum errors to maintain
+                                customer satisfaction.</p>
+                            <p>Ensured customer safety in terms of allergens and food sensitivities.</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Collaboration</li>
+                                <li>Organization</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        
+        
+        
+            <h2>Education and Qualifications</h2>
+            <section id="Education">
+                <table class="body">
+                    <caption><h3>Education</h3></caption>
+                    <tr>
+                        <th>School</th>
+                        <th>GPA</th>
+                        <th>Years of Attendence</th>
+                        <th>Major and Minor</th>
+                    </tr>
+                    <tr>
+                        <td>Issaquah Highschool</td>
+                        <td>3.70</td>
+                        <td>2017 - 2021</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Gonzaga University</td>
+                        <td>3.88</td>
+                        <td>2021 - 2025</td>
+                        <td><p>Major: Computer Science</p>
+                                <ul>
+                                    <li>Concentrations:
+                                        <ul>
+                                            <li>Software Application Development</li>
+                                            <li>Software Security</li>
+                                        </ul>
+                                </ul>
+                            <p>Minor: Art</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        
+            <section id="CS_Qualifications">
+                <table class = "body">
+                    <caption><h3>CS Qualifications</h3></caption>
+                    <tr>
+                        <th>Class</th>
+                        <th>Year Taken</th>
+                        <th>Description (currently plagarized from Zagweb, will fix later)</th>
+                        <th>Final Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Algorithms and Abstract Data Structures</td>
+                        <td>Fall 2022</td>
+                        <td>Algorithm analysis using Big-O notation, sorting, heaps, balanced binary search trees, and hash tables.</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development</td>
+                        <td>Spring 2023</td>
+                        <td>Object-oriented programming, user-interface design and development, and software construction including program design, development tools, and basic concepts in software engineering.</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Organization</td>
+                        <td>Spring 2023</td>
+                        <td>Basic topics in the design of modern computer systems. Topics include digital logic, computer system components, machine-level code, memory organization and management, computer arithmetic, assembly-language programming, and basic connections between high-level and low-level languages (C and assembly). This course also serves as a foundation for courses on networking. security, operating systems, and computer architecture, where a deeper understanding of systems-level issues is required.</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Design</td>
+                        <td>Spring 2023</td>
+                        <td>Exploration of theories and principles related to human-computer interaction, user experience design, and user interface design. Development of techniques and practices for designing and evaluating software usability.</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile App Development</td>
+                        <td>Fall 2023</td>
+                        <td>introduction to mobile application development. The primary aim of this course is to provide students with a thorough introduction to designing and building native and/or cross-platform apps for mobile devices. The platform, frameworks/libraries, and development tools used in this course vary and are dependent on the current demand in industry. Topics include object-oriented programming, design patterns, user interface design and implementation, data storage, working with application programming interfaces, threading, camera and photos, and location and maps.</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>Fall 2023</td>
+                        <td>Study of operating systems internals. Topics include concurrent programming, memory management, file system management, scheduling algorithms, and security.</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Fall 2024</td>
+                        <td></td>
+                        <td>IN PROGRESS</td>
+                    </tr>
+                    <tr>
+                        <td>Applied Cryptography</td>
+                        <td>Fall 2024</td>
+                        <td></td>
+                        <td>IN PROGRESS</td>
+                    </tr>
+                    <tr>
+                        <td>Software Engineering</td>
+                        <td>Fall 2024</td>
+                        <td></td>
+                        <td>IN PROGRESS</td>
+                    </tr>
+                </table>
+            </section>
+        
+            <section id="Art_Qualifications">
+                <table class = "body">
+                    <caption><h3>Art Qualifications</h3></caption>
+                    <tr>
+                        <th>Class</th>
+                        <th>Year Taken</th>
+                        <th>Description (currently plagarized from Zagweb, will fix later)</th>
+                        <th>Final Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Drawing I</td>
+                        <td>Fall 2022</td>
+                        <td>The graphic representation of visual reality in a variety of media; emphasis is directed toward an understanding of observation, form, line, value, composition, and space.</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Art Foundations</td>
+                        <td>Spring 2023</td>
+                        <td>An introduction to basic design and digital art, using the computer as a primary tool and Adobe Photoshop, as well as drawing and painting materials.</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Oil Painting</td>
+                        <td>Fall 2023</td>
+                        <td>Basic problems in oil techniques, explorations in still life, landscape, and expression.</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Art in the 19th Century</td>
+                        <td>Fall 2023</td>
+                        <td>A survey of European and American art from c. 1789 to 1914. Special emphasis placed on the relationship between art and political revolution, Orientalism and "Primitivism" in the visual arts, the rise of landscape painting, the invention of photography, and the formation of an avant-garde identity in the nineteenth century.</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Fresco</td>
+                        <td>Spring 2023</td>
+                        <td></td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Figure Drawing I</td>
+                        <td>Spring 2023</td>
+                        <td></td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Renaissance Architecture</td>
+                        <td>Spring 2023</td>
+                        <td></td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>Figure Drawing II</td>
+                        <td>Fall 2024</td>
+                        <td></td>
+                        <td>IN PROGRESS</td>
+                    </tr>
+                </table>
+            </section>
+            
+        
+            <section>
+                <h2>Interests and Hobbies</h2>
+                <ol>
+                    <li><h3>Drawing & Painting</h3></li>
+                    <li><h3>Embroidery</h3></li>
+                    <li><h3>Reading</h3>
+                        <section id="reading">
+                            <table class="books">
+                                <caption><h4>Favorite books over the years:</h4></caption>
+                                <tr>
+                                    <td>Ender's Game by Orson Scott Card</td>
+                                    <td>
+                                        <a href="https://www.amazon.com/Enders-Ender-Quintet-Orson-Scott/dp/0812550706">
+                                        <img src="enders_game_cover.jpg" alt="Ender's Game Cover"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>The Poisonwood Bible by Barbara Kingsolver</td>
+                                        <td><a href="https://www.amazon.com/Poisonwood-Bible-Novel-Barbara-Kingsolver/dp/0061577073">
+                                        <img src="poisonwood_cover.jpg" alt="The Poisonwood Bible Cover"></a>                                
+                                    </td>
+                                </tr>      
+                                <tr>
+                                    <td>Percy Jackson and the Olympians by Rick Riordan</td>
+                                    <td><a href="https://www.amazon.com/Jackson-Olympians-Lightning-Deluxe-Collectors/dp/136810102X">
+                                        <img src="pj_cover.jpg" alt="Percy Jackson and the Olympians Cover"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Lord of the Rings by JRR Tolkien</td>
+                                    <td><a href="https://www.amazon.com/Lord-Rings-J-R-R-Tolkien/dp/0544003411">
+                                        <img src="rings_cover.jpg" alt="Lord of the Rings Cover"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+                    </li>
+                </ol>
+            </section>
+        </main>
+    </div>
+
+
+    
 </body>
 </html>
