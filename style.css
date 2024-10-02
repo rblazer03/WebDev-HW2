@@ -1,0 +1,76 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#navBar{
+    position: sticky;
+    z-index: 10;
+    background-color: #c8bfe7;
+    top: 0px;
+    padding-bottom: 10px;
+    width: auto;
+}
+.links th,.links td { 
+    text-align: center;
+    font-size: 15px;
+    width: 250px;
+}
+.links img {
+    width: 100px;
+    border-radius: 25%;
+    margin-top: 10px;
+}
+
+#container {
+    display: flex;
+}
+aside {
+    flex: 0 1 30%;
+    background-color: #c8bfe776;
+}
+main {
+    flex: 0 1 70%;
+    background-color: #c0cbe82f;
+}
+#body h2{
+    background-color: #c8bfe7;
+    padding: 10px;
+    border-radius: 10px;
+}
+#body tr:nth-child(odd) {
+    background-color: #c8bfe776;
+}
+#Intro img{
+    padding-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 500px;
+    /* EXTRA CREDIT special effect */
+    border-radius: 15px;
+    
+}
+#aside h2, h3{
+    padding-left: 10px;
+}
+#aside p{
+    padding-left: 10px;
+}
+
+#skill ul{
+    list-style-type: square;
+}
+.career th, .career td { 
+    border: 2px solid;
+}
+.body th,.body td { 
+    border: 2px solid;
+}
+.books img{
+    width: 100px;
+    margin-left:10px;
+    margin-right: 30px;
+}
+.books th,.books td{
+    text-indent: 30px;
+    text-align: center;
+}
